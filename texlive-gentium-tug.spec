@@ -5,8 +5,8 @@
 # catalog-license other-free
 # catalog-version 1.0
 Name:		texlive-gentium-tug
-Version:	1.0
-Release:	9
+Version:	1.1
+Release:	1
 Summary:	Gentium fonts (in two formats) and support files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/gentium-tug
