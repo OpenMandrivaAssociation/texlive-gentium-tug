@@ -1,6 +1,6 @@
 Name:		texlive-gentium-tug
 Version:	1.1
-Release:	2
+Release:	3
 Summary:	Gentium fonts (in two formats) and support files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/gentium-tug
