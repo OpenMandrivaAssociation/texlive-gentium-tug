@@ -1,13 +1,13 @@
 Name:		texlive-gentium-tug
-Version:	1.1
-Release:	3
+Version:	63470
+Release:	1
 Summary:	Gentium fonts (in two formats) and support files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/gentium-tug
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gentium-tug.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gentium-tug.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gentium-tug.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gentium-tug.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gentium-tug.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gentium-tug.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +29,12 @@ related documentation, and the SIL documentation and other
 files.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +45,6 @@ files.
 %{_texmfdistdir}/fonts/tfm/public/gentium-tug
 %{_texmfdistdir}/fonts/truetype/public/gentium-tug
 %{_texmfdistdir}/fonts/type1/public/gentium-tug
-%{_texmfdistdir}/tex/context/third/gentium-tug
 %{_texmfdistdir}/tex/latex/gentium-tug
 %doc %{_texmfdistdir}/doc/fonts/gentium-tug
 #- source
@@ -53,7 +52,8 @@ files.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
