@@ -3,7 +3,7 @@ Version:	63470
 Release:	2
 Summary:	Gentium fonts (in two formats) and support files
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/gentium-tug
+URL:		https://www.ctan.org/tex-archive/fonts/gentium-tug
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gentium-tug.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gentium-tug.doc.r%{version}.tar.xz
